@@ -1,10 +1,12 @@
 from module1 import *
 users=["Zan"]
-password=["12345"]
+passwords=["12345"]
 
 while True:
-    print("Reg-1,Avt-2,Välja-3")
+    print("Näita kõike -0,Reg-1,Avt-2,Välja-3")
     v=int(input())
+    if v==0:
+        koik_kasutajad(users,passwords)  
     if v==1:
         print("Registreriumine")
         reg()

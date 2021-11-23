@@ -1,6 +1,4 @@
-﻿import random
-users=["Marina"]
-password=["12345"]
+import random
 def passcontrol(psword):
     psword=list(psword)
 def passauto()->str:
@@ -42,13 +40,20 @@ def reg():
             break
         else:
             print("see nimi juba on olemas listis")
-        v=input("Arvuti-A või ise-I loob parool")
-        if v.upper()=="A": 
-            pas=passauto()
-        elif v.upper()=="I":
-            pas=input("Sisesta oma parool")
-            tulemus=passcontrol(pas)
-        if tulemus==True:
-            user.append(log)
-            passwords.append(pas)
-            break
+    v=input("Arvuti-A või ise-I loob parool")
+    if v.upper()=="A": 
+        pas=passauto()
+    elif v.upper()=="I":
+        pas=input("Sisesta oma parool")
+        tulemus=passcontrol(pas)
+    if tulemus==True:
+        user.append(log)
+        passwords.append(pas)
+def koik_kasutajad(users,passwords):
+    """Вывод логина и пароля на экран
+    """
+    i=0
+    for user in users:
+        print(user, end="-")
+        print(passwords[i])
+        i+=1
