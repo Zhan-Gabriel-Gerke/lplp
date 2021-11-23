@@ -32,7 +32,7 @@ def paskontroll(psword:str)->bool:
     else:
         t=False
     return t 
-def reg():
+def reg(users,passwords):
     while 1:
         log=input("kasutaja tunnus")
         if log not in users:

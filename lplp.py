@@ -7,16 +7,16 @@ while True:
     v=int(input())
     if v==0:
         koik_kasutajad(users,passwords)  
-    if v==1:
+    elif v==1:
         print("Registreriumine")
-        reg()
+        reg(users,passwords)
     elif v==2:
         print("Avtoriseriumine")
         log=input("Login:")
         if log not in users:
             print("sinu ei rigiistrirtud")
         pas=input("Paswoerd:")
-        if pas not in password:
+        if pas not in passwords:
             print("viga")
     elif v==3:
         print("Välja")
