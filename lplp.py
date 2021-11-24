@@ -10,8 +10,7 @@ while True:
     elif v==1:
         print("Registreriumine")
         reg(users,passwords)
-        users.append(users)
-        passwords.append(passwords)
+        t=passcontrol(passwords)
     elif v==2:
         print("Avtoriseriumine")
         log=input("Login:")

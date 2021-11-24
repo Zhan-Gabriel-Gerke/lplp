@@ -1,6 +1,6 @@
 import random
-def passcontrol(psword):
-    psword=list(psword)
+def passcontrol(paswords):
+    paswords=list(paswords)
 def passauto()->str:
     """loob arvuti automatselt parool 
     """
