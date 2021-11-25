@@ -66,3 +66,7 @@ def loe_failist_listisse(file:str)->list:
         list_.append(stroka.strip())
     f.close()
     return list_
+def faili_sisu_umberkirjutamine(file:str,list_:list):
+    with open(file,"w") as f:
+        for slovo in list:
+            f.write(slovo+"\n")

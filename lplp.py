@@ -21,6 +21,8 @@ while True:
             print("viga")
     elif v==3:
         print("Välja")
+        faili_sisu_umberkirjutamine("Textfile2.txt")
+        faili_sisu_umberkirjutamine("Textfile3.txt")
         #
         break
     else:
