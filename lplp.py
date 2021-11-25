@@ -1,6 +1,6 @@
 from module1 import *
-users=["Zan"]
-passwords=["12345"]
+users=loe_failist_listisse("Textfile2.txt")
+passwords=loe_failist_listisse("TextFile3.txt")
 
 while True:
     print("Näita kõike -0,Reg-1,Avt-2,Välja-3")
