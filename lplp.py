@@ -23,7 +23,6 @@ while True:
         print("Välja")
         faili_sisu_umberkirjutamine("Textfile2.txt")
         faili_sisu_umberkirjutamine("Textfile3.txt")
-        #
         break
     else:
         print("On vaja valida 1,2 või 3")
